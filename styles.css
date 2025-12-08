@@ -95,7 +95,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url("assets/imagens/Home.png");
-    background-size: 100% 100%;   /* DESKTOP */
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -114,7 +114,7 @@ body {
 --------------------------- */
 
 .sobre {
-    padding: 80px 20px 0 20px;  /* sem espaço embaixo */
+    padding: 80px 20px 0 20px;  /* 🔥 ZERO padding embaixo */
     background-color: #fff5f2;
 }
 
@@ -138,18 +138,20 @@ body {
     margin-bottom: 25px;
 }
 
-/* IMAGEM DA RAPOSA */
+/* IMAGEM DA RAPOSA — ALTURA CORRETA, SEM BUGS */
 .sobre img.imagem-quem-somos {
     width: 100%;
-    max-width: 500px;
+    max-width: 500px;    /* tamanho ideal no desktop */
+
 }
 
 /* --------------------------
           SERVIÇOS
 --------------------------- */
 
+/* 🔥 COLADO NA RAPOSA (0 espaço acima) */
 .servicos {
-    padding: 0 40px; /* colado na raposa */
+    padding: 0 40px;
     background-color: #fff5f2;
 }
 
@@ -233,14 +235,12 @@ body {
         display: block;
     }
 
-    /* HERO — versão grande no mobile */
+    /* HERO */
     .hero-title {
-        font-size: 190px;
-        font-weight: 900;
-        background-size: cover !important; /* SOBRESCREVE O DESKTOP */
+        font-size: 14vw;
+        background-size: cover;
+        line-height: 1;
         max-width: 100%;
-        display: inline-block;
-        text-transform: lowercase;
     }
 
     .hero-subtitle {
@@ -249,7 +249,7 @@ body {
 
     /* SOBRE */
     .sobre {
-        padding: 60px 20px 0 20px;
+        padding: 60px 20px 0 20px; /* sem espaço embaixo */
     }
 
     .sobre-titulo {
@@ -260,13 +260,14 @@ body {
         font-size: 18px;
     }
 
-    /* RAPOSA MOBILE */
+    /* RAPOSA — menor, controlada e centralizada */
     .sobre img.imagem-quem-somos {
         max-width: 320px;
         width: 100%;
+        margin: 20px auto;
     }
 
-    /* SERVIÇOS MOBILE */
+    /* SERVIÇOS — 0 DISTÂNCIA NO MOBILE TAMBÉM */
     .servicos {
         padding: 0 20px !important;
     }
