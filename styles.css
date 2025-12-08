@@ -235,6 +235,19 @@ body {
         display: block;
     }
 
+    /* HERO */
+    .hero-title {
+        font-size: 120px;      /* 🔥 hero grande de verdade */
+        line-height: 1;
+        background-size: contain; 
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
     /* SOBRE */
     .sobre {
         padding: 60px 20px 0 20px; /* sem espaço embaixo */
