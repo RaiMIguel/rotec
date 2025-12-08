@@ -11,8 +11,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow-x: hidden;
-
 }
 
 /* --------------------------
@@ -87,12 +85,9 @@ body {
         #ffb59b 40%,
         #fff5f2 100%
     );
-    overflow-x: hidden;
-
 }
 
 .hero-title {
-    max-width: 100%;
     font-size: 190px;
     font-weight: 900;
     text-transform: lowercase;
@@ -240,12 +235,12 @@ body {
 
     /* HERO — versão grande no mobile */
     .hero-title {
-        font-size: 170px !important;    /* GRANDE DE VERDADE */
-        line-height: 1;
+        font-size: 190px;
+        font-weight: 900;
         background-size: cover !important; /* SOBRESCREVE O DESKTOP */
         max-width: 100%;
         display: inline-block;
-        white-space: nowrap; /* evita quebra */
+        text-transform: lowercase;
     }
 
     .hero-subtitle {
