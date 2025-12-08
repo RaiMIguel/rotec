@@ -237,8 +237,8 @@ body {
 
     /* HERO */
     .hero-title {
-        font-size: 20vw;
-        background-size: auto 100%;  /* libera o aumento VISUAL */
+        font-size: 14vw;
+        background-size: cover;
         line-height: 1;
         max-width: 100%;
     }
