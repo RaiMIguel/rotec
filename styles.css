@@ -90,7 +90,7 @@ body {
 }
 
 .hero-title {
-    font-size: 180px;
+    font-size: 190px;
     font-weight: 900;
     text-transform: lowercase;
     color: transparent;
@@ -99,8 +99,10 @@ body {
     background-image: url("assets/imagens/Home.png");
     background-size: 100% 100%;
     background-position: center;
-    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
+
 
 .hero-subtitle {
     max-width: 900px;
