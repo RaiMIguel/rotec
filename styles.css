@@ -95,7 +95,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: url("assets/imagens/Home.png");
-    background-size: 100% 100%;
+    background-size: 100% 100%;   /* DESKTOP */
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -114,7 +114,7 @@ body {
 --------------------------- */
 
 .sobre {
-    padding: 80px 20px 0 20px;  /* 🔥 ZERO padding embaixo */
+    padding: 80px 20px 0 20px;  /* sem espaço embaixo */
     background-color: #fff5f2;
 }
 
@@ -138,20 +138,18 @@ body {
     margin-bottom: 25px;
 }
 
-/* IMAGEM DA RAPOSA — ALTURA CORRETA, SEM BUGS */
+/* IMAGEM DA RAPOSA */
 .sobre img.imagem-quem-somos {
     width: 100%;
-    max-width: 500px;    /* tamanho ideal no desktop */
-
+    max-width: 500px;
 }
 
 /* --------------------------
           SERVIÇOS
 --------------------------- */
 
-/* 🔥 COLADO NA RAPOSA (0 espaço acima) */
 .servicos {
-    padding: 0 40px;
+    padding: 0 40px; /* colado na raposa */
     background-color: #fff5f2;
 }
 
@@ -235,13 +233,14 @@ body {
         display: block;
     }
 
-    /* HERO */
+    /* HERO — versão grande no mobile */
     .hero-title {
-        font-size: 120px;      /* 🔥 hero grande de verdade */
+        font-size: 170px !important;    /* GRANDE DE VERDADE */
         line-height: 1;
-        background-size: contain; 
+        background-size: cover !important; /* SOBRESCREVE O DESKTOP */
         max-width: 100%;
         display: inline-block;
+        white-space: nowrap; /* evita quebra */
     }
 
     .hero-subtitle {
@@ -250,7 +249,7 @@ body {
 
     /* SOBRE */
     .sobre {
-        padding: 60px 20px 0 20px; /* sem espaço embaixo */
+        padding: 60px 20px 0 20px;
     }
 
     .sobre-titulo {
@@ -261,14 +260,13 @@ body {
         font-size: 18px;
     }
 
-    /* RAPOSA — menor, controlada e centralizada */
+    /* RAPOSA MOBILE */
     .sobre img.imagem-quem-somos {
         max-width: 320px;
         width: 100%;
-        margin: 20px auto;
     }
 
-    /* SERVIÇOS — 0 DISTÂNCIA NO MOBILE TAMBÉM */
+    /* SERVIÇOS MOBILE */
     .servicos {
         padding: 0 20px !important;
     }
