@@ -114,7 +114,7 @@ body {
 --------------------------- */
 
 .sobre {
-    padding: 80px 20px;
+    padding: 80px 20px 0 20px;  /* 🔥 ZERO padding embaixo */
     background-color: #fff5f2;
 }
 
@@ -142,7 +142,7 @@ body {
 .sobre img.imagem-quem-somos {
     width: 100%;
     max-width: 500px;    /* tamanho ideal no desktop */
-    display: block;
+
 }
 
 /* --------------------------
@@ -248,6 +248,10 @@ body {
     }
 
     /* SOBRE */
+    .sobre {
+        padding: 60px 20px 0 20px; /* sem espaço embaixo */
+    }
+
     .sobre-titulo {
         font-size: 36px;
     }
