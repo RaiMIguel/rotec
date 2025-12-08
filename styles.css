@@ -52,6 +52,8 @@ body {
     list-style: none;
     display: flex;
     gap: 30px;
+    background: #fff5f2;   /* 👈 AQUI ESTÁ A COR DO MENU ABERTO */
+
 }
 
 .navbar a {
@@ -186,7 +188,7 @@ body {
 
 .servico-item {
     padding: 30px;
-    background: #fafafa;
+    background: #fff5f2;
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     text-align: center;
@@ -217,7 +219,7 @@ body {
     .navbar ul {
         display: none;
         flex-direction: column;
-        background: #fff;
+        background: #fff5f2;   /* nova cor */
         position: absolute;
         right: 0;
         top: 80px;
@@ -236,19 +238,18 @@ body {
     }
 
     .hero {
-        padding-top: 90px; /* 🔥 desce o texto para o R ficar visível */
+        padding-top: 120px;   /* 🔥 sobe o bloco inteiro */
     }
     /* HERO */
-    .hero-title {
-        font-size: 22vw;         /* 🔥 MUITO maior */
-        line-height: 1.15;   /* 🔥 impede corte superior */
-        background-size: contain; /* mantém textura sem distorcer */
-        max-width: 100%;         /* impede overflow */
-        display: block;
-        white-space: normal;     /* 🔥 PERMITE quebrar → NÃO corta */
-        overflow-wrap: break-word; /* 🔥 garante que nunca corte na lateral */
-        text-align: center;
-    }
+ .hero-title {
+    font-size: 20vw;      /* texto realmente grande */
+    line-height: 1.2;     /* 🔥 evita corte do topo da letra */
+    background-size: 100% 100%;
+    background-position: center;
+    display: inline-block;
+    max-width: 100%;
+}
+
 
     .hero-subtitle {
         font-size: 18px;
