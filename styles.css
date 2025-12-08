@@ -11,6 +11,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+
 }
 
 /* --------------------------
@@ -85,9 +87,12 @@ body {
         #ffb59b 40%,
         #fff5f2 100%
     );
+    overflow-x: hidden;
+
 }
 
 .hero-title {
+    max-width: 100%;
     font-size: 190px;
     font-weight: 900;
     text-transform: lowercase;
