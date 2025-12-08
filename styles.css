@@ -79,12 +79,7 @@ body {
     margin-top: 90px;
     text-align: center;
     padding: 40px;
-    background: linear-gradient(
-        180deg,
-        #ff9276 0%,
-        #ffb59b 40%,
-        #fff5f2 100%
-    );
+    background: #ff9276
 }
 
 .hero-title {
@@ -115,7 +110,12 @@ body {
 
 .sobre {
     padding: 80px 20px 0 20px;  /* 🔥 ZERO padding embaixo */
-    background-color: #fff5f2;
+        background: linear-gradient(
+        180deg,
+        #ff9276 0%,
+        #ffb59b 40%,
+        #fff5f2 100%
+    );
 }
 
 .sobre .container {
