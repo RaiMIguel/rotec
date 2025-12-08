@@ -235,10 +235,13 @@ body {
         display: block;
     }
 
-        /* HERO */
+    .hero {
+        padding-top: 90px; /* 🔥 desce o texto para o R ficar visível */
+    }
+    /* HERO */
     .hero-title {
         font-size: 22vw;         /* 🔥 MUITO maior */
-        line-height: 0.85;       /* ajusta altura da fonte */
+        line-height: 1.15;   /* 🔥 impede corte superior */
         background-size: contain; /* mantém textura sem distorcer */
         max-width: 100%;         /* impede overflow */
         display: block;
