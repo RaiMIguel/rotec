@@ -235,5 +235,80 @@ body {
     font-size: 18px;
     color: #444;
 }
+@media (max-width: 900px) {
 
+    /* navbar */
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        width: 220px;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    /* hero */
+    .hero-title {
+        font-size: 110px;
+        background-size: cover; /* ajusta melhor em celular */
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    /* sobre */
+    .sobre-titulo {
+        font-size: 36px;
+    }
+
+    .sobre-texto {
+        font-size: 18px;
+    }
+
+    .sobre img.imagem-quem-somos {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    /* serviços */
+    .titulo-servicos {
+        font-size: 40px;
+    }
+
+    .descricao-servicos {
+        font-size: 18px;
+    }
+
+    .servicos {
+        padding: 50px 20px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .servico-item {
+        padding: 25px;
+    }
+}
 
