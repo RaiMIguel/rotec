@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotec | Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="assets/imagens/rotec.png" alt="Logo">
+        <span class="logo-text">rotecº</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <!--<li><a href="#">Casos de sucesso</a></li>-->
+            <li><a href="contato.html" class="active">Contato</a></li>
+            <!--<li><a href="#">Blog</a></li>-->
+            <li><a href="#">Portfólio</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-mobile" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO CONTATO -->
+<section class="contato-hero">
+    <h1>Vamos conversar?</h1>
+    <p>Entre em contato e veja como a Rotecº pode transformar o seu negócio.</p>
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="contato-container">
+    <h2>Fale com a gente</h2>
+
+    <form action="https://formsubmit.co/raimiguel904@gmail.com" method="POST" class="contato-form">
+
+        <!-- ANTI-SPAM (OBRIGATÓRIO) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+            <label>Nome Completo</label>
+            <input type="text" name="Nome" required>
+        </div>
+
+        <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" name="Email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Telefone</label>
+            <input type="text" name="Telefone">
+        </div>
+
+        <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" name="Empresa">
+        </div>
+
+        <div class="form-group">
+            <label>Assunto</label>
+            <select name="Assunto">
+                <option value="Site">Quero um site</option>
+                <option value="Automação">Automação</option>
+                <option value="Consultoria">Consultoria</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+
+        <div class="form-group full">
+            <label>Mensagem</label>
+            <textarea name="Mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-metricas">Enviar mensagem</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- COLUNA 1 -->
+            <div class="footer-col">
+                <p class="footer-descricao">
+                    A Rotecº é uma startup focada em criar soluções digitais,
+                    desenvolvendo websites modernos e automações inteligentes
+                    para empresas que desejam evoluir com tecnologia.
+                </p>
+
+                <img src="assets/imagens/logonome.png" class="footer-logo" alt="Rotec Logo">
+            </div>
+
+            <!-- COLUNA 2 -->
+            <div class="footer-col">
+                <h3>Rotecº</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <!--<li><a href="">Histórias de Sucesso</a></li>-->
+                </ul>
+            </div>
+
+            <!-- COLUNA 3 -->
+            <div class="footer-col">
+                <h3>Informações</h3>
+
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUNA 4 -->
+            <div class="footer-col">
+                <h3>Atendimento</h3>
+                <p><strong>Paulista – PE</strong><br> Tel: +55 81 97910-5271<br> Email: rotec.br@outlook.com<br>Instagram: @rotec.br</p>
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            Copyright © Rotecº 2025 – Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

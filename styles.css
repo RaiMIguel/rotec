@@ -336,6 +336,258 @@ body {
    RESPONSIVIDADE
 ====================================== */
 
+
+/* ======================================
+   RESPONSIVIDADE
+====================================== */
+/* ---------- HERO EMPRESA ---------- */
+.hero-empresa {
+    margin-top: 80px;
+    padding: 110px 20px;
+    text-align: center;
+    position: relative;
+    background-image: url("assets/imagens/fundoempresa.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-empresa::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 245, 242, 0.65);
+    z-index: 1;
+}
+
+
+.hero-empresa h1 {
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+    line-height: 0.85;
+
+    color: #d55900;
+    opacity: 0.70;  /* 15% de visibilidade (bem transparente) */
+  
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.hero-empresa p {
+    position: relative;
+    z-index: 5;
+    max-width: 900px;
+    margin: 10px auto;
+    margin-top: 20px;
+    line-height: 1.5;
+
+
+    font-size: 26px;
+    color: #E64522;
+}
+
+/* ---------- QUEM SOMOS ---------- */
+.empresa-sobre {
+    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+    padding: 40px 0;
+}
+.empresa-sobre h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.empresa-sobre p {
+    font-size: 22px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.empresa-filosofia {
+    padding: 40px 0px;
+    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+}
+.empresa-filosofia h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+.empresa-filosofia p {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ---------- MISSÃO, VISÃO, VALORES ---------- */
+.mvv {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+}
+
+.mvv-item {
+    background: #fff5f2;
+    padding: 30px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.mvv-item h3 {
+    font-size: 26px;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.mvv-item p {
+    font-size: 18px;
+    color: #555
+}
+
+/* ---------- DIFERENCIAIS ---------- */
+.diferenciais {
+    padding: 40px 20px 60px;
+    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+        margin-top: 0;
+
+}
+
+.diferenciais h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.dif-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0 60px;
+    color: #555
+}
+
+.dif-item {
+    background: #fff5f2;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    font-size: 20px;
+}
+
+/* ---------- CTA ---------- */
+.cta-empresa {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+}
+
+.cta-empresa h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* HERO CONTATO */
+.contato-hero {
+    margin-top: 80px;
+    padding: 100px 20px;
+    text-align: center;
+    background: #fff5f2;
+}
+
+.contato-hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #d55900;
+}
+
+.contato-hero p {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #E64522;
+}
+
+/* FORMULÁRIO */
+.contato-container {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    background-image: url("assets/imagens/fundocontato.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contato-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 213, 192, 0.50); /* deixa a imagem mais suave */
+    z-index: 1;
+}
+
+
+.contato-container h2 {
+    font-size: 42px;
+    color: #1b1b1b;
+    margin-bottom: 40px;
+    z-index: 2;
+    position: relative; /* OBRIGATÓRIO para o z-index funcionar */
+}
+
+.contato-form {
+    position: relative; /* OBRIGATÓRIO para o z-index funcionar */
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    z-index: 2;
+}
+
+.form-group {
+    text-align: left;
+    
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b1b1b;
+    z-index: 2;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 5px;
+    background: #fff;
+    z-index: 2;
+
+}
+
 @media (max-width: 900px) {
 
     .menu-mobile {
@@ -405,4 +657,89 @@ body {
     .footer-logo {
         margin: 20px auto;
     }
+        .hero-empresa {
+        padding-top: 30px;
+        margin-bottom: -40px;
+
+    }
+
+    .hero-empresa h1 {
+        font-size: 12vw;      /* Ajusta dinamicamente */
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .hero-empresa p {
+        font-size: 5vw;
+        max-width: 95%;
+        line-height: 1.4;
+    }
+
+    /* ===== QUEM SOMOS ===== */
+    .empresa-sobre h2,
+    .empresa-filosofia h2 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .empresa-sobre p,
+    .empresa-filosofia p {
+        font-size: 4.5vw;
+    }
+
+    /* ===== MVV (Missão, Visão, Valores) ===== */
+    .mvv {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .mvv-item {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .mvv-item h3 {
+        font-size: 6vw;
+    }
+
+    .mvv-item p {
+        font-size: 4vw;
+    }
+
+    /* ===== DIFERENCIAIS ===== */
+    .diferenciais h2 {
+        font-size: 7vw;
+    }
+
+    .dif-grid {
+        grid-template-columns: 1fr;   /* Vira 1 coluna */
+        gap: 15px;
+    }
+
+    .dif-item {
+        font-size: 4.5vw;
+    }
+
+    /* ===== CTA ===== */
+    .cta-empresa h2 {
+        font-size: 7vw;
+    }
+
+    .btn-metricas {
+        font-size: 4.5vw;
+        padding: 12px 30px;
+    }
+        .contato-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: span 1;
+    }
+
+    .contato-hero h1 {
+        font-size: 38px;
+    }
+
 }
