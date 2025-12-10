@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rotec | Contato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotec | Portfólio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -21,74 +21,56 @@
         <ul>
             <li><a href="index.html">Página inicial</a></li>
             <li><a href="empresa.html">Empresa</a></li>
-            <!--<li><a href="#">Casos de sucesso</a></li>-->
-            <li><a href="contato.html" class="active">Contato</a></li>
-            <!--<li><a href="#">Blog</a></li>-->
-            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portfolio.html" class="active">Portfólio</a></li>
         </ul>
     </nav>
 
     <div class="menu-mobile" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- HERO CONTATO -->
-<section class="contato-hero">
-    <h1>Vamos conversar?</h1>
-    <p>Entre em contato e veja como a Rotecº pode transformar o seu negócio.</p>
+<!-- HERO PORTFÓLIO -->
+<section class="hero-portfolio">
+    <h1>Projetos que fazem a diferença.</h1>
+    <p>Confira alguns dos trabalhos desenvolvidos pela Rotecº.</p>
 </section>
 
-<!-- FORMULÁRIO -->
-<section class="contato-container">
-    <h2>Fale com a gente</h2>
+<!-- LISTA DE PROJETOS -->
+<section class="portfolio-grid container">
 
-    <form action="https://formsubmit.co/raimiguel904@gmail.com" method="POST" class="contato-form">
+    <div class="portfolio-item">
+        <img src="assets/imagens/projetorotec.png" alt="Projeto 3">
+        <h2>Rotec</h2>
+        <h3>Website Institucional</h3>
+        <p>Projeto de alta performance focado em branding e conversão. Design totalmente responsivo, otimizado para SEO e com identidade visual estratégica para transmitir autoridade e captar novos clientes.</p>
+        <span class="tag">WebSite</span>
+    </div>
 
-        <!-- ANTI-SPAM (OBRIGATÓRIO) -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+    <div class="portfolio-item">
+        <img src="assets/imagens/projetochurras.png" alt="Projeto 2">
+        <h2>Churrasqueiro</h2>
+        <h3>App Desktop<br>Frente de caixa</h3>
+        <p>Sistema desktop completo para Food Service. Controle de mesas, pedidos e fechamento de caixa em tempo real. Desenvolvido para eliminar erros, agilizar o atendimento e garantir controle financeiro total</p>
+        <span class="tag">Automação</span>
+    </div>
 
-        <div class="form-group">
-            <label>Nome Completo</label>
-            <input type="text" name="Nome" required>
-        </div>
+    <div class="portfolio-item">
+        <img src="assets/imagens/projetoquarto.png" alt="Projeto 1">
+        <h2>QuartoNível</h2>
+        <h3>Game Desktop</h3>
+        <p>QuartoNível- Modo Família : um jogo interativo para incentivar boas práticas em casa de forma divertida.</p>
+        <span class="tag">Game</span>
+    </div>
 
-        <div class="form-group">
-            <label>E-mail</label>
-            <input type="email" name="Email" required>
-        </div>
+</section>
 
-        <div class="form-group">
-            <label>Telefone</label>
-            <input type="text" name="Telefone">
-        </div>
-
-        <div class="form-group">
-            <label>Empresa</label>
-            <input type="text" name="Empresa">
-        </div>
-
-        <div class="form-group">
-            <label>Assunto</label>
-            <select name="Assunto">
-                <option value="Site">Quero um site</option>
-                <option value="Automação">Automação</option>
-                <option value="Consultoria">Consultoria</option>
-                <option value="Outro">Outro</option>
-            </select>
-        </div>
-
-        <div class="form-group full">
-            <label>Mensagem</label>
-            <textarea name="Mensagem" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="btn-metricas">Enviar mensagem</button>
-    </form>
+<!-- CTA -->
+<section class="ctadois-empresa">
+    <h2>Quer um projeto assim também?</h2>
+    <a href="contato.html" class="btn-metricas">Entre em contato</a>
 </section>
 
 <script src="script.js"></script>
-
-<!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
 
@@ -137,6 +119,5 @@
             Copyright © Rotecº 2025 – Todos os direitos reservados.
         </div>
     </footer>
-
 </body>
 </html>

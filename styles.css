@@ -411,7 +411,8 @@ body {
 }
 .empresa-filosofia {
     padding: 40px 0px;
-    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+
 }
 .empresa-filosofia h2 {
     font-size: 48px;
@@ -432,7 +433,8 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 60px 20px;
-    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+
 }
 
 .mvv-item {
@@ -458,8 +460,8 @@ body {
 /* ---------- DIFERENCIAIS ---------- */
 .diferenciais {
     padding: 40px 20px 60px;
-    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
-        margin-top: 0;
+    background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+    margin-top: 0;
 
 }
 
@@ -489,10 +491,29 @@ body {
 }
 
 /* ---------- CTA ---------- */
-.cta-empresa {
+.port-empresa {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+
+
+}
+.port-empresa h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.ctadois-empresa {
     text-align: center;
     padding: 80px 20px;
     background: linear-gradient(180deg, #fff5f2 0%, #ffdccf 40%, #ffd5c0 100%);
+
+}
+.cta-empresa {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #ffd5c0 0%, #ffdccf 40%, #fff5f2 100%);
+
 }
 
 .cta-empresa h2 {
@@ -587,6 +608,107 @@ body {
     z-index: 2;
 
 }
+/* HERO PORTFÓLIO */
+.hero-portfolio {
+    margin-top: 80px;
+    padding: 110px 20px;
+    text-align: center;
+    position: relative;
+    background-image: url("assets/imagens/fundoport.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-portfolio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 245, 242, 0.65);
+    z-index: 1;
+}
+
+
+.hero-portfolio h1 {
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+    line-height: 0.85;
+
+    color: #d55900;
+    opacity: 0.70;  /* 15% de visibilidade (bem transparente) */
+  
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+
+.hero-portfolio p {
+    position: relative;
+    z-index: 5;
+    max-width: 900px;
+    margin: 10px auto;
+    margin-top: 20px;
+    line-height: 1.5;
+
+
+    font-size: 26px;
+    color: #E64522;
+}
+
+
+/* GRID DE PROJETOS */
+.portfolio-grid {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.portfolio-item {
+    background: #fff5f2;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 24px;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #ff9276;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* RESPONSIVO */
+
 
 @media (max-width: 900px) {
 
@@ -657,16 +779,20 @@ body {
     .footer-logo {
         margin: 20px auto;
     }
-        .hero-empresa {
+    .hero-empresa {
         padding-top: 30px;
-        margin-bottom: -40px;
+        margin-bottom: 40px;
 
     }
 
     .hero-empresa h1 {
-        font-size: 12vw;      /* Ajusta dinamicamente */
-        line-height: 1;
-        margin-bottom: 10px;
+    font-size: 10vw;          /* reduz só um pouco o tamanho */
+    line-height: 1.1;
+    word-wrap: break-word;    /* força quebra */
+    word-break: break-word;   /* quebra palavras muito longas */
+    overflow-wrap: break-word;/* impede scroll lateral */
+    text-align: center;
+    padding: 0 10px;
     }
 
     .hero-empresa p {
@@ -725,6 +851,9 @@ body {
     .cta-empresa h2 {
         font-size: 7vw;
     }
+    .port-empresa h2 {
+        font-size: 7vw;
+    }
 
     .btn-metricas {
         font-size: 4.5vw;
@@ -741,5 +870,13 @@ body {
     .contato-hero h1 {
         font-size: 38px;
     }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-portfolio h1 {
+        font-size: 34px;
+    }
+
 
 }
