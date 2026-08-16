@@ -707,6 +707,399 @@ body {
     font-weight: 600;
 }
 
+.portfolio-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.portfolio-link {
+    display: inline-block;
+    padding: 9px 20px;
+
+    border: 2px solid #e60000;
+    border-radius: 25px;
+
+    color: #e60000;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.portfolio-link:hover {
+    background: #e60000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   PÁGINA DE DOWNLOAD - RALLBACK
+================================================== */
+
+.rallback-download-page {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #fff5f2 0%,
+        #ffdccf 55%,
+        #ffd5c0 100%
+    );
+}
+
+
+/* ÁREA PRINCIPAL */
+.rallback-download-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+/* CARD PRINCIPAL */
+.rallback-download-card {
+    width: 100%;
+    max-width: 720px;
+
+    background: #fff5f2;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* IMAGEM / LOGO */
+.rallback-download-logo {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+
+/* NOME */
+.rallback-download-card h1 {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #d55900;
+}
+
+
+/* SUBTÍTULO */
+.rallback-download-card h2 {
+    margin: 5px 0 20px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #e64522;
+}
+
+
+/* DESCRIÇÃO */
+.rallback-download-description {
+    max-width: 620px;
+
+    margin: 0 auto 30px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* =====================================
+   INFORMAÇÕES DA VERSÃO
+===================================== */
+
+.rallback-download-info {
+    max-width: 620px;
+
+    margin: 0 auto 30px;
+
+    padding: 10px 25px;
+
+    background: #fff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+
+    text-align: left;
+}
+
+
+.rallback-info-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #ffd5c0;
+}
+
+
+.rallback-info-row:last-child {
+    border-bottom: none;
+}
+
+
+.rallback-info-row span {
+    font-size: 15px;
+
+    color: #777;
+}
+
+
+.rallback-info-row strong {
+    font-size: 15px;
+
+    color: #333;
+
+    text-align: right;
+}
+
+
+/* STATUS BETA */
+.rallback-beta {
+    padding: 4px 12px;
+
+    background: #ff9276;
+
+    color: #fff !important;
+
+    border-radius: 20px;
+
+    font-size: 12px !important;
+}
+
+
+/* =====================================
+   DOWNLOAD
+===================================== */
+
+.rallback-btn-download {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    text-decoration: none;
+}
+
+
+.rallback-file-info {
+    margin: 12px 0 0;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+/* =====================================
+   AVISO ADMINISTRADOR
+===================================== */
+
+.rallback-admin-warning {
+    max-width: 620px;
+
+    margin: 30px auto 0;
+
+    padding: 20px;
+
+    background: #fff;
+
+    border-left: 5px solid #e64522;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+    text-align: left;
+}
+
+
+.rallback-admin-warning strong {
+    color: #e64522;
+
+    font-size: 16px;
+}
+
+
+.rallback-admin-warning p {
+    margin: 8px 0 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =====================================
+   SHA-256
+===================================== */
+
+.rallback-sha {
+    max-width: 620px;
+
+    margin: 25px auto 0;
+
+    padding: 20px;
+
+    background: #222;
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+
+.rallback-sha strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    font-size: 15px;
+}
+
+
+.rallback-sha code {
+    display: block;
+
+    padding: 13px;
+
+    background: #333;
+
+    color: #ff9276;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    overflow-wrap: anywhere;
+    word-break: break-all;
+}
+
+
+.rallback-sha p {
+    margin: 12px 0 0;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #aaa;
+}
+
+
+/* =====================================
+   VOLTAR
+===================================== */
+
+.rallback-voltar {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: #d55900;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.rallback-voltar:hover {
+    color: #e64522;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .rallback-download-container {
+        padding: 25px 15px;
+    }
+
+
+    .rallback-download-card {
+        padding: 30px 20px;
+
+        border-radius: 16px;
+    }
+
+
+    .rallback-download-logo {
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .rallback-download-card h1 {
+        font-size: 38px;
+    }
+
+
+    .rallback-download-card h2 {
+        font-size: 20px;
+    }
+
+
+    .rallback-download-description {
+        font-size: 14px;
+    }
+
+
+    .rallback-info-row {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 4px;
+    }
+
+
+    .rallback-info-row strong {
+        text-align: left;
+    }
+
+}
+
 /* RESPONSIVO */
 
 
