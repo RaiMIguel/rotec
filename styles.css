@@ -905,6 +905,36 @@ body {
    DOWNLOAD
 ===================================== */
 
+
+.rallback-download-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.rallback-btn-manual {
+    display: inline-block;
+    padding: 11px 24px;
+
+    border: 2px solid #e60000;
+    border-radius: 25px;
+
+    color: #e60000;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.rallback-btn-manual:hover {
+    background: #e60000;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 .rallback-btn-download {
     display: inline-block;
 
@@ -1046,60 +1076,63 @@ body {
 }
 
 
+
 /* =====================================
    MOBILE
 ===================================== */
-
 @media (max-width: 600px) {
 
     .rallback-download-container {
         padding: 25px 15px;
     }
 
-
     .rallback-download-card {
         padding: 30px 20px;
-
         border-radius: 16px;
     }
-
 
     .rallback-download-logo {
         width: 140px;
         height: 140px;
     }
 
-
     .rallback-download-card h1 {
         font-size: 38px;
     }
-
 
     .rallback-download-card h2 {
         font-size: 20px;
     }
 
-
     .rallback-download-description {
         font-size: 14px;
     }
 
-
     .rallback-info-row {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 4px;
     }
-
 
     .rallback-info-row strong {
         text-align: left;
     }
 
-}
+    .rallback-download-actions {
+        width: 100%;
+    }
 
+    .rallback-btn-download,
+    .rallback-btn-manual {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .rallback-sha code {
+        word-break: break-all;
+    }
+}
 /* RESPONSIVO */
 
 
