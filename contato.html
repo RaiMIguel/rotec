@@ -1,145 +1,278 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rotec | Contato</title>
+
+    <title>Rotecº | Contato</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <img src="assets/imagens/rotec.png" alt="Logo">
-        <span class="logo-text">rotecº</span>
-    </div>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Página inicial</a></li>
-            <li><a href="empresa.html">Empresa</a></li>
-            <!--<li><a href="#">Casos de sucesso</a></li>-->
-            <li><a href="contato.html" class="active">Contato</a></li>
-            <!--<li><a href="#">Blog</a></li>-->
-            <li><a href="portfolio.html">Portfólio</a></li>
-        </ul>
-    </nav>
-
-    <div class="menu-mobile" onclick="toggleMenu()">☰</div>
-</header>
-
-<!-- HERO CONTATO -->
-<section class="contato-hero">
-    <h1>Vamos conversar?</h1>
-    <p>Entre em contato e veja como a Rotecº pode transformar o seu negócio.</p>
-</section>
-
-<!-- FORMULÁRIO -->
-<section class="contato-container">
-    <h2>Fale com a gente</h2>
-
-    <form action="https://formsubmit.co/rotecbr.tech@gmail.com" method="POST" class="contato-form">
-
-        <!-- ANTI-SPAM (OBRIGATÓRIO) -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://www.rotecbr.com.br/obrigado.html">
-        <input type="hidden" name="_subject" value="Nova mensagem pelo site da Rotecº!">
-
-
-        <div class="form-group">
-            <label>Nome Completo</label>
-            <input type="text" name="Nome" required>
+        <div class="logo">
+            <img src="assets/imagens/rotec.png" alt="Logo Rotecº">
+            <span class="logo-text">rotecº</span>
         </div>
 
-        <div class="form-group">
-            <label>E-mail</label>
-            <input type="email" name="Email" required>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="empresa.html">Sobre mim</a></li>
+                <li><a href="portfolio.html">Projetos</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile" onclick="toggleMenu()">
+            ☰
         </div>
 
-        <div class="form-group">
-            <label>Telefone</label>
-            <input type="text" name="Telefone">
-        </div>
+    </header>
 
-        <div class="form-group">
-            <label>Empresa</label>
-            <input type="text" name="Empresa">
-        </div>
 
-        <div class="form-group">
-            <label>Assunto</label>
-            <select name="Assunto">
-                <option value="Site">Quero um site</option>
-                <option value="Automação">Automação</option>
-                <option value="Consultoria">Consultoria</option>
-                <option value="Outro">Outro</option>
-            </select>
-        </div>
+    <!-- HERO CONTATO -->
+    <section class="contato-hero">
 
-        <div class="form-group full">
-            <label>Mensagem</label>
-            <textarea name="Mensagem" rows="5" required></textarea>
-        </div>
+        <h1>Vamos conversar?</h1>
 
-        <button type="submit" class="btn-metricas">Enviar mensagem</button>
-    </form>
-</section>
+        <p>
+            Quer falar sobre tecnologia, algum projeto ou uma solução personalizada?
+            Entre em contato comigo.
+        </p>
 
-<script src="script.js"></script>
+    </section>
 
-<!-- FOOTER -->
+
+    <!-- FORMULÁRIO -->
+    <section class="contato-container">
+
+        <h2>Fale comigo</h2>
+
+        <form
+            action="https://formsubmit.co/rotecbr.tech@gmail.com"
+            method="POST"
+            class="contato-form"
+        >
+
+            <!-- CONFIGURAÇÕES DO FORMSUBMIT -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_template" value="table">
+
+            <input
+                type="hidden"
+                name="_next"
+                value="https://www.rotecbr.com.br/obrigado.html"
+            >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="Nova mensagem pelo site da Rotecº!"
+            >
+
+
+            <div class="form-group">
+
+                <label>Nome completo</label>
+
+                <input
+                    type="text"
+                    name="Nome"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>E-mail</label>
+
+                <input
+                    type="email"
+                    name="Email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Telefone</label>
+
+                <input
+                    type="text"
+                    name="Telefone"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Empresa ou projeto (opcional)</label>
+
+                <input
+                    type="text"
+                    name="Empresa ou projeto"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Assunto</label>
+
+                <select name="Assunto">
+
+                    <option value="Projeto">
+                        Quero conversar sobre um projeto
+                    </option>
+
+                    <option value="Automacao">
+                        Automação
+                    </option>
+
+                    <option value="Desenvolvimento Web">
+                        Desenvolvimento Web
+                    </option>
+
+                    <option value="Solucao Personalizada">
+                        Solução personalizada
+                    </option>
+
+                    <option value="Tecnologia">
+                        Tecnologia / Networking
+                    </option>
+
+                    <option value="Outro">
+                        Outro assunto
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+                <label>Mensagem</label>
+
+                <textarea
+                    name="Mensagem"
+                    rows="5"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn-metricas"
+            >
+                Enviar mensagem
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+
+    <!-- FOOTER -->
     <footer class="footer">
+
         <div class="footer-container">
 
             <!-- COLUNA 1 -->
             <div class="footer-col">
+
                 <p class="footer-descricao">
-                    A Rotecº é uma startup focada em criar soluções digitais,
-                    desenvolvendo websites modernos e automações inteligentes
-                    para empresas que desejam evoluir com tecnologia.
+                    A Rotecº é meu espaço pessoal de tecnologia,
+                    onde compartilho projetos, experiências, estudos
+                    e soluções desenvolvidas nas áreas de software,
+                    redes, infraestrutura e automação.
                 </p>
 
-                <img src="assets/imagens/logonome.png" class="footer-logo" alt="Rotec Logo">
+                <img
+                    src="assets/imagens/logonome.png"
+                    class="footer-logo"
+                    alt="Rotecº"
+                >
+
             </div>
+
 
             <!-- COLUNA 2 -->
             <div class="footer-col">
+
                 <h3>Rotecº</h3>
+
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="empresa.html">Empresa</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="empresa.html">Sobre mim</a></li>
+                    <li><a href="portfolio.html">Projetos</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <!--<li><a href="">Histórias de Sucesso</a></li>-->
                 </ul>
+
             </div>
+
 
             <!-- COLUNA 3 -->
             <div class="footer-col">
+
                 <h3>Informações</h3>
 
                 <ul>
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Termos de Uso</a></li>
                 </ul>
+
             </div>
+
 
             <!-- COLUNA 4 -->
             <div class="footer-col">
-                <h3>Atendimento</h3>
-                <p><strong>Paulista – PE</strong><br> Tel: +55 81 97910-5271<br> Email: rotecbr.tech@gmail.com<br>Instagram: @rotec.br</p>
+
+                <h3>Contato</h3>
+
+                <p>
+                    <strong>Paulista – PE</strong><br>
+                    Tel: +55 81 97910-5271<br>
+                    Email: rotecbr.tech@gmail.com<br>
+                    Instagram: @rotec.br
+                </p>
+
             </div>
 
         </div>
 
+
         <div class="footer-copy">
-            Copyright © Rotecº 2025 – Todos os direitos reservados.
+            Copyright © Rotecº 2026 – Todos os direitos reservados.
         </div>
+
     </footer>
 
 </body>
+
 </html>
